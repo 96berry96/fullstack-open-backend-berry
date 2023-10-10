@@ -4,6 +4,7 @@ const cors = require('cors')
 
 app.use(express.json())
 app.use(cors())
+app.use(express.static('build'))
 
 const generatedId = () => {
   const maxId = notes.length > 0 
